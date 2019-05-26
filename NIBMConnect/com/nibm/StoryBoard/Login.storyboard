@@ -22,13 +22,13 @@
                                 <rect key="frame" x="20" y="134" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-QE-0aj">
                                 <rect key="frame" x="20" y="194" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeI-B7-FzR">
                                 <rect key="frame" x="342" y="254" width="52" height="33"/>
@@ -45,12 +45,23 @@
                                     <segue destination="Qnf-Zw-veD" kind="show" id="zMs-AX-pzd"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-c8-Lll">
+                                <rect key="frame" x="60" y="393" width="294" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vfn-G0-A4C"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="32J-eU-c3o" firstAttribute="trailing" secondItem="WIp-jv-nsC" secondAttribute="trailing" constant="20" id="5Jb-he-U3d"/>
                             <constraint firstItem="JpE-ew-3q0" firstAttribute="centerY" secondItem="zeI-B7-FzR" secondAttribute="centerY" id="8El-2f-EAZ"/>
+                            <constraint firstItem="8GC-c8-Lll" firstAttribute="leading" secondItem="32J-eU-c3o" secondAttribute="leading" constant="60" id="9J0-7i-DQH"/>
                             <constraint firstItem="zeI-B7-FzR" firstAttribute="trailing" secondItem="XnZ-QE-0aj" secondAttribute="trailing" id="Dfo-t2-IFC"/>
+                            <constraint firstItem="8GC-c8-Lll" firstAttribute="centerX" secondItem="QY2-vo-c5u" secondAttribute="centerX" id="IhU-2j-Y0a"/>
+                            <constraint firstItem="8GC-c8-Lll" firstAttribute="top" secondItem="zeI-B7-FzR" secondAttribute="bottom" constant="106" id="JHc-01-8Ev"/>
+                            <constraint firstItem="32J-eU-c3o" firstAttribute="trailing" secondItem="8GC-c8-Lll" secondAttribute="trailing" constant="60" id="Loh-Gh-cx4"/>
                             <constraint firstItem="XnZ-QE-0aj" firstAttribute="top" secondItem="WIp-jv-nsC" secondAttribute="bottom" constant="30" id="PUT-yr-UIp"/>
                             <constraint firstItem="JpE-ew-3q0" firstAttribute="leading" secondItem="XnZ-QE-0aj" secondAttribute="leading" id="UgY-fC-O5g"/>
                             <constraint firstItem="zeI-B7-FzR" firstAttribute="top" secondItem="XnZ-QE-0aj" secondAttribute="bottom" constant="30" id="WNk-bE-uYr"/>
@@ -70,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4p8-62-yq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113" y="27"/>
+            <point key="canvasLocation" x="1111.5942028985507" y="26.785714285714285"/>
         </scene>
         <!--Home-->
         <scene sceneID="SOu-X4-0xY">

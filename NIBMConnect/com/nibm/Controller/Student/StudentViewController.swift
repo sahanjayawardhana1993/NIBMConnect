@@ -7,24 +7,84 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
-class StudentViewController: UIViewController {
 
+class StudentViewController: UIViewController{
+    
+    var ref: DatabaseReference!
+    var friendList:[Friends] = []
+    var passFriend:Friends? = nil
+    
+    @IBOutlet weak var studentTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        ref = Database.database().reference()
+        
+            self.ref.child("students").observeSingleEvent(of: .value) { (snapshot) in
+                //get user value
+                
+                let value = snapshot.value as? NSDictionary
+                var friends:[Friends] = []
+                
+                if snapshot.childrenCount > 0 {
+                    for friend in snapshot.children.allObjects as! [DataSnapshot]{
+                        
+                        let friendObject = friend.value as? [String:AnyObject]
+                        let fri = Friends(id: friendObject!["id"] as! String, fName: friendObject!["fName"] as! String, lName: friendObject!["lName"] as! String, fBLink: friendObject!["fbLink"] as! String, ph: friendObject!["phone"] as! String, bir: friendObject!["birth"] as! String, pf: friendObject!["pf"] as! String, city: friendObject!["city"] as! String)
+                        
+                        friends.append(fri)
+                    }
+                }
+                self.friendList = friends
+                self.studentTableView.reloadData()
+                
+            
+        }
+        
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        self.studentTableView.delegate = self
+        self.studentTableView.dataSource = self
+        // Do any additional setup after loading the view.
     }
-    */
 
+}
+
+extension StudentViewController:UITableViewDelegate,UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return friendList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell:friendCell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath)  as! friendCell
+        
+        let friend = friendList[indexPath.row]
+        
+        cell.firstName.text = friend.firstName
+        cell.lastName.text = friend.lastName
+        cell.cityName.text = friend.city
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        passFriend = friendList[indexPath.row]
+        performSegue(withIdentifier: "goToProfile", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToProfile" {
+            if let ViewController = segue.destination as? friendViewController {
+               ViewController.passFriend = passFriend
+            }
+            
+        }
+    }
+    
+    
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rfy-ed-cJv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RjO-lR-MqQ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,65 +11,88 @@
     </dependencies>
     <scenes>
         <!--HomeWork-->
-        <scene sceneID="AAZ-kh-Eq4">
+        <scene sceneID="mCe-aD-uKT">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeWork" id="pOK-vv-5vr" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ov-Od-9Hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="HomeWork" id="EDm-MQ-Ttl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlJ-3y-GUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1914" y="246"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="xDT-Op-Iq5">
+        <!--Base View Controller-->
+        <scene sceneID="fAs-kH-jtw">
             <objects>
-                <viewController id="x84-kZ-IGf" customClass="HomeViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WQJ-7Y-8vA">
+                <viewController id="JEI-Qp-lMG" customClass="BaseViewController" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cR-Hu-7Lb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITk-qb-d0q">
+                                <rect key="frame" x="164" y="273" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <action selector="goToProfile:" destination="JEI-Qp-lMG" eventType="touchUpInside" id="bMw-sb-GVY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbc-Br-ZN4">
+                                <rect key="frame" x="148" y="336" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="HomeWork"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hit-79-Mtn">
+                                <rect key="frame" x="161" y="399" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Friends"/>
+                                <connections>
+                                    <action selector="friendsView:" destination="JEI-Qp-lMG" eventType="touchUpInside" id="RbZ-kJ-Bqo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="CN9-0Y-5yw"/>
+                        <viewLayoutGuide key="safeArea" id="8Kz-nY-Ade"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Wwc-4w-T2M"/>
+                    <navigationItem key="navigationItem" id="Nfs-uT-JHD"/>
                     <connections>
-                        <segue destination="UsB-zp-dpz" kind="show" identifier="showStudent" id="Ebp-XT-1BU"/>
-                        <segue destination="uey-Ud-G1d" kind="show" identifier="showMyProfile" id="Upd-nM-3sv"/>
-                        <segue destination="pOK-vv-5vr" kind="show" identifier="showHomeWork" id="Jnu-6V-Lkf"/>
+                        <segue destination="Oma-lT-hB3" kind="show" identifier="showStudent" id="zA9-0D-0Wf"/>
+                        <segue destination="IhC-x9-Cp2" kind="show" identifier="showMyProfile" id="tdd-9T-e4l"/>
+                        <segue destination="EDm-MQ-Ttl" kind="show" identifier="showHomeWork" id="2rS-gD-h1s"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vqz-7C-7Om" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wv-IH-3gX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="27.455357142857142"/>
         </scene>
         <!--Student-->
-        <scene sceneID="jVO-mq-rW6">
+        <scene sceneID="d4C-W2-QSw">
             <objects>
-                <viewControllerPlaceholder storyboardName="Student" id="UsB-zp-dpz" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nMe-BI-qa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Student" id="Oma-lT-hB3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbW-M7-SVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1881" y="-280"/>
         </scene>
         <!--MyProfile-->
-        <scene sceneID="5jU-9x-5y2">
+        <scene sceneID="UwZ-AD-vjK">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyProfile" id="uey-Ud-G1d" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cle-Fm-I5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="MyProfile" id="IhC-x9-Cp2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6x-bQ-hQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1914" y="-62"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="oQf-CF-3dJ">
+        <scene sceneID="2Kj-P3-Cch">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rfy-ed-cJv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RjO-lR-MqQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ozO-AK-WuI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NuV-HH-Hat">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="x84-kZ-IGf" kind="relationship" relationship="rootViewController" id="rBV-4U-CFv"/>
+                        <segue destination="JEI-Qp-lMG" kind="relationship" relationship="rootViewController" id="5zY-BR-eyh"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BKg-7z-Tbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aj6-QS-Mn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="27.455357142857142"/>
         </scene>

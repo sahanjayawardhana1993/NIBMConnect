@@ -21,28 +21,28 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="nbr-uj-eta" kind="show" identifier="showLogin" id="RoK-a6-lqF"/>
-                        <segue destination="uOd-dN-eGd" kind="show" identifier="showHome" id="cpt-dp-UW7"/>
+                        <segue destination="6P9-wb-Bdp" kind="show" identifier="gotologin" id="aWz-I1-Rga"/>
+                        <segue destination="nKG-zd-t5b" kind="show" identifier="gotohome" id="aSS-3r-69D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
         <!--Login-->
-        <scene sceneID="r4I-Q9-w8c">
+        <scene sceneID="oxu-Gv-1qG">
             <objects>
-                <viewControllerPlaceholder storyboardName="Login" id="nbr-uj-eta" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wVS-u4-4vJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Login" id="6P9-wb-Bdp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFj-GI-7FJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="-85"/>
+            <point key="canvasLocation" x="908" y="21"/>
         </scene>
         <!--Home-->
-        <scene sceneID="8Q5-TV-vwL">
+        <scene sceneID="Smw-ZN-Yrn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="uOd-dN-eGd" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ALz-BK-UWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Home" id="nKG-zd-t5b" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xW-Od-BBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="957" y="184"/>
+            <point key="canvasLocation" x="570" y="129"/>
         </scene>
     </scenes>
 </document>
