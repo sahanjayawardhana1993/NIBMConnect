@@ -16,6 +16,9 @@ class MyProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

@@ -50,6 +50,11 @@ class StudentViewController: UIViewController{
         self.studentTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func backButton(_ sender: Any) {
+        //self.performSegue(withIdentifier: "Home", sender: self)
+        self.dismiss(animated: false, completion: nil)
+    }
 
 }
 

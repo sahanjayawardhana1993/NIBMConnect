@@ -17,12 +17,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="6P9-wb-Bdp" kind="show" identifier="gotologin" id="aWz-I1-Rga"/>
-                        <segue destination="nKG-zd-t5b" kind="show" identifier="gotohome" id="aSS-3r-69D"/>
+                        <segue destination="6P9-wb-Bdp" kind="presentation" identifier="gotologin" id="aWz-I1-Rga"/>
+                        <segue destination="nKG-zd-t5b" kind="presentation" identifier="gotohome" id="aSS-3r-69D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,7 +42,7 @@
                 <viewControllerPlaceholder storyboardName="Home" id="nKG-zd-t5b" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xW-Od-BBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="129"/>
+            <point key="canvasLocation" x="910" y="153"/>
         </scene>
     </scenes>
 </document>

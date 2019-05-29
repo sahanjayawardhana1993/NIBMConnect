@@ -12,10 +12,30 @@ import LocalAuthentication
 
 class BaseViewController: UIViewController {
 
+    @IBOutlet weak var profileButton: UIButton!
+    @IBOutlet weak var homeWorkButton: UIButton!
+    @IBOutlet weak var friendButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+       view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
+        
+        profileButton.backgroundColor = .clear
+        profileButton.layer.cornerRadius = 15
+        profileButton.layer.borderWidth = 2
+        profileButton.layer.borderColor = UIColor.white.cgColor
+        
+        homeWorkButton.backgroundColor = .clear
+        homeWorkButton.layer.cornerRadius = 15
+        homeWorkButton.layer.borderWidth = 2
+        homeWorkButton.layer.borderColor = UIColor.white.cgColor
+        
+        friendButton.backgroundColor = .clear
+        friendButton.layer.cornerRadius = 15
+        friendButton.layer.borderWidth = 2
+        friendButton.layer.borderColor = UIColor.white.cgColor
     }
   
     @IBAction func goToProfile(_ sender: Any) {
@@ -48,6 +68,11 @@ class BaseViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func homeView(_ sender: Any) {
+           self.performSegue(withIdentifier: "showHomeWork", sender: nil)
+    }
+    
     
     @IBAction func friendsView(_ sender: Any) {
         

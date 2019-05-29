@@ -11,6 +11,9 @@ import Firebase
 import FirebaseAuth
 import GoogleSignIn
 
+let colorTop = UIColor(red:0.25, green:0.32, blue:0.71, alpha:1.0)
+let colorBottom = UIColor(red:0.35, green:0.78, blue:0.98, alpha:1.0)
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

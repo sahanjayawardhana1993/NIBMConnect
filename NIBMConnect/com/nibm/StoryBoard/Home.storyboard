@@ -13,7 +13,9 @@
         <!--HomeWork-->
         <scene sceneID="mCe-aD-uKT">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeWork" id="EDm-MQ-Ttl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="HomeWork" id="EDm-MQ-Ttl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3ET-tS-FkS"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GlJ-3y-GUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1914" y="246"/>
@@ -26,33 +28,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITk-qb-d0q">
-                                <rect key="frame" x="164" y="273" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Profile"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITk-qb-d0q">
+                                <rect key="frame" x="30" y="238" width="354" height="120"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="IAS-Ei-Soe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <state key="normal" title="Profile">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="goToProfile:" destination="JEI-Qp-lMG" eventType="touchUpInside" id="bMw-sb-GVY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbc-Br-ZN4">
-                                <rect key="frame" x="148" y="336" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="HomeWork"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbc-Br-ZN4">
+                                <rect key="frame" x="30" y="388" width="354" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="4bj-Qm-jAg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <state key="normal" title="HomeWork">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeView:" destination="JEI-Qp-lMG" eventType="touchUpInside" id="ymY-ci-20A"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hit-79-Mtn">
-                                <rect key="frame" x="161" y="399" width="51" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Friends"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hit-79-Mtn">
+                                <rect key="frame" x="30" y="538" width="354" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="axX-qW-l49"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <state key="normal" title="Friends">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="friendsView:" destination="JEI-Qp-lMG" eventType="touchUpInside" id="RbZ-kJ-Bqo"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hit-79-Mtn" firstAttribute="leading" secondItem="8Kz-nY-Ade" secondAttribute="leading" constant="30" id="0ck-ZH-iju"/>
+                            <constraint firstItem="jbc-Br-ZN4" firstAttribute="leading" secondItem="8Kz-nY-Ade" secondAttribute="leading" constant="30" id="1cG-89-Ufl"/>
+                            <constraint firstItem="Hit-79-Mtn" firstAttribute="top" secondItem="jbc-Br-ZN4" secondAttribute="bottom" constant="30" id="6bM-D1-ryP"/>
+                            <constraint firstItem="ITk-qb-d0q" firstAttribute="leading" secondItem="8Kz-nY-Ade" secondAttribute="leading" constant="30" id="9j3-ZZ-8fx"/>
+                            <constraint firstItem="jbc-Br-ZN4" firstAttribute="centerX" secondItem="7cR-Hu-7Lb" secondAttribute="centerX" id="AB0-oG-yeA"/>
+                            <constraint firstItem="jbc-Br-ZN4" firstAttribute="centerY" secondItem="7cR-Hu-7Lb" secondAttribute="centerY" id="DJG-so-zN8"/>
+                            <constraint firstItem="8Kz-nY-Ade" firstAttribute="trailing" secondItem="Hit-79-Mtn" secondAttribute="trailing" constant="30" id="QLQ-3N-85D"/>
+                            <constraint firstItem="8Kz-nY-Ade" firstAttribute="trailing" secondItem="ITk-qb-d0q" secondAttribute="trailing" constant="30" id="g0y-io-9fQ"/>
+                            <constraint firstItem="8Kz-nY-Ade" firstAttribute="trailing" secondItem="jbc-Br-ZN4" secondAttribute="trailing" constant="30" id="oCF-4n-4ma"/>
+                            <constraint firstItem="jbc-Br-ZN4" firstAttribute="top" secondItem="ITk-qb-d0q" secondAttribute="bottom" constant="30" id="tTF-Qj-uHm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8Kz-nY-Ade"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nfs-uT-JHD"/>
                     <connections>
+                        <outlet property="friendButton" destination="Hit-79-Mtn" id="Vqw-oW-bg3"/>
+                        <outlet property="homeWorkButton" destination="jbc-Br-ZN4" id="bC0-HU-RVO"/>
+                        <outlet property="profileButton" destination="ITk-qb-d0q" id="X0w-Th-lTB"/>
                         <segue destination="Oma-lT-hB3" kind="show" identifier="showStudent" id="zA9-0D-0Wf"/>
                         <segue destination="IhC-x9-Cp2" kind="show" identifier="showMyProfile" id="tdd-9T-e4l"/>
                         <segue destination="EDm-MQ-Ttl" kind="show" identifier="showHomeWork" id="2rS-gD-h1s"/>
@@ -81,10 +117,9 @@
         <!--Navigation Controller-->
         <scene sceneID="2Kj-P3-Cch">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RjO-lR-MqQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="RjO-lR-MqQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NuV-HH-Hat">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
