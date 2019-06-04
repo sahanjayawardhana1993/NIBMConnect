@@ -17,6 +17,7 @@ class friendViewController: UIViewController {
     @IBOutlet weak var birthday: UILabel!
     @IBOutlet weak var phoneNUm: UILabel!
     @IBOutlet weak var fbLink: UILabel!
+    @IBOutlet weak var proImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,8 @@ class friendViewController: UIViewController {
         self.birthday.text = passFriend?.birthDay
         self.phoneNUm.text = passFriend?.phoneNum
         self.fbLink.text = passFriend?.fbLink
+        let url = URL(string: passFriend!.pf)
+        proImg.kf.setImage(with: url)
         
     }
     

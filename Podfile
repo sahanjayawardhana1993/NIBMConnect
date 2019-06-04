@@ -9,6 +9,7 @@ target 'NIBMConnect' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'GoogleSignIn'
+  pod 'Kingfisher', '~> 5.0'
 
   # Pods for NIBMConnect
 

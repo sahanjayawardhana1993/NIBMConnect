@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import Kingfisher
 
 
 class StudentViewController: UIViewController{
@@ -73,6 +74,8 @@ extension StudentViewController:UITableViewDelegate,UITableViewDataSource {
         cell.firstName.text = friend.firstName
         cell.lastName.text = friend.lastName
         cell.cityName.text = friend.city
+        let url = URL(string: self.friendList[indexPath.row].pf)
+        cell.pfIMage.kf.setImage(with: url)
         
         return cell
     }
