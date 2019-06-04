@@ -31,37 +31,31 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeI-B7-FzR">
-                                <rect key="frame" x="342" y="254" width="52" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Sign In"/>
+                                <rect key="frame" x="329" y="254" width="65" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="signInAction:" destination="8iF-PM-You" eventType="touchUpInside" id="khe-7w-xjU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpE-ew-3q0">
-                                <rect key="frame" x="20" y="255.5" width="123" height="30"/>
-                                <state key="normal" title="forgot password ?"/>
+                                <rect key="frame" x="20" y="254" width="170" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="forgot password ?">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="Qnf-Zw-veD" kind="show" id="zMs-AX-pzd"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-c8-Lll">
-                                <rect key="frame" x="60" y="393" width="294" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Vfn-G0-A4C"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="32J-eU-c3o" firstAttribute="trailing" secondItem="WIp-jv-nsC" secondAttribute="trailing" constant="20" id="5Jb-he-U3d"/>
                             <constraint firstItem="JpE-ew-3q0" firstAttribute="centerY" secondItem="zeI-B7-FzR" secondAttribute="centerY" id="8El-2f-EAZ"/>
-                            <constraint firstItem="8GC-c8-Lll" firstAttribute="leading" secondItem="32J-eU-c3o" secondAttribute="leading" constant="60" id="9J0-7i-DQH"/>
                             <constraint firstItem="zeI-B7-FzR" firstAttribute="trailing" secondItem="XnZ-QE-0aj" secondAttribute="trailing" id="Dfo-t2-IFC"/>
-                            <constraint firstItem="8GC-c8-Lll" firstAttribute="centerX" secondItem="QY2-vo-c5u" secondAttribute="centerX" id="IhU-2j-Y0a"/>
-                            <constraint firstItem="8GC-c8-Lll" firstAttribute="top" secondItem="zeI-B7-FzR" secondAttribute="bottom" constant="106" id="JHc-01-8Ev"/>
-                            <constraint firstItem="32J-eU-c3o" firstAttribute="trailing" secondItem="8GC-c8-Lll" secondAttribute="trailing" constant="60" id="Loh-Gh-cx4"/>
                             <constraint firstItem="XnZ-QE-0aj" firstAttribute="top" secondItem="WIp-jv-nsC" secondAttribute="bottom" constant="30" id="PUT-yr-UIp"/>
                             <constraint firstItem="JpE-ew-3q0" firstAttribute="leading" secondItem="XnZ-QE-0aj" secondAttribute="leading" id="UgY-fC-O5g"/>
                             <constraint firstItem="zeI-B7-FzR" firstAttribute="top" secondItem="XnZ-QE-0aj" secondAttribute="bottom" constant="30" id="WNk-bE-uYr"/>
@@ -106,9 +100,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFr-ct-8cG">
-                                <rect key="frame" x="132" y="214" width="150" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Get Password"/>
+                                <rect key="frame" x="132" y="214" width="150" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Get Password">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="getPassword:" destination="Qnf-Zw-veD" eventType="touchUpInside" id="eoq-qy-fhl"/>
                                     <action selector="signInAction:" destination="8iF-PM-You" eventType="touchUpInside" id="dcO-dF-icn"/>

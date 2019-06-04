@@ -16,7 +16,7 @@ class ForgetPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+view.setGradientBackground(colorOne: colorTop, colorTwo: colorBottom)
         // Do any additional setup after loading the view.
     }
     @IBAction func getPassword(_ sender: Any) {

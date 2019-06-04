@@ -68,6 +68,14 @@
                                     <action selector="friendsView:" destination="JEI-Qp-lMG" eventType="touchUpInside" id="RbZ-kJ-Bqo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYO-22-pTd">
+                                <rect key="frame" x="333" y="60" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SignOut"/>
+                                <connections>
+                                    <action selector="signOut:" destination="JEI-Qp-lMG" eventType="touchUpInside" id="B8u-Ee-tXz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -92,11 +100,20 @@
                         <segue destination="Oma-lT-hB3" kind="show" identifier="showStudent" id="zA9-0D-0Wf"/>
                         <segue destination="IhC-x9-Cp2" kind="show" identifier="showMyProfile" id="tdd-9T-e4l"/>
                         <segue destination="EDm-MQ-Ttl" kind="show" identifier="showHomeWork" id="2rS-gD-h1s"/>
+                        <segue destination="eXJ-aY-tZq" kind="show" identifier="goLogin" id="tpK-IR-Zn6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Wv-IH-3gX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="27.455357142857142"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="GA8-OY-NXO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="eXJ-aY-tZq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtS-WN-ZOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537" y="-257"/>
         </scene>
         <!--Student-->
         <scene sceneID="d4C-W2-QSw">
